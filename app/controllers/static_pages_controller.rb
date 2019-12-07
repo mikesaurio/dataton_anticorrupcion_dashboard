@@ -1,14 +1,16 @@
 class StaticPagesController < ApplicationController
-
-  def index
+  def general
     @index= 0
   end
-
-  def reference_price
+  def index
     @index= 1
   end
 
+  def reference_price
+    @index= 2
+  end
+
   def sanctioned
-    @index = 2
+    @index = 3
   end
 end

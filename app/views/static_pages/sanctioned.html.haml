@@ -58,12 +58,24 @@
             .card.shadow.mb-4
               / Card Header - Dropdown
               .card-header.py-3.d-flex.flex-row.align-items-center.justify-content-between
-                %h6.m-0.font-weight-bold.text-primary Earnings Overview
+                %h6.m-0.font-weight-bold.text-primary CONAGUA
               / Card Body
               .card-body.long
                 .chart-area
-                  =image_tag "top_sobreprecio.png", class: "img-dashboard-2"
+                  %iframe{:src => "http://localhost:3000/conagua/index.html", width: "100%", height: "600px"}
 
+        / Content Row
+        .row
+          / Area Chart
+          .col-xl-12.col-lg-12
+            .card.shadow.mb-4
+              / Card Header - Dropdown
+              .card-header.py-3.d-flex.flex-row.align-items-center.justify-content-between
+                %h6.m-0.font-weight-bold.text-primary CFE
+              / Card Body
+              .card-body.long
+                .chart-area
+                  %iframe{:src => "http://localhost:3000/cfe/index.html", width: "100%", height: "600px"}
 
     / End of Main Content
     / Footer
