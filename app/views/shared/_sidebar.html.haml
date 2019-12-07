@@ -6,17 +6,17 @@
 / Divider
 %hr.sidebar-divider.my-0/
 / Nav Item - Dashboard
-%li.nav-item.active
+%li.nav-item{class: ("active" if @index==0)}
   %a.nav-link{:href => "#{root_path}"}
     %i.fas.fa-fw.fa-tachometer-alt
     %span Participantes
 %hr.sidebar-divider.d-none.d-md-block/
-%li.nav-item
+%li.nav-item{class: ("active" if @index==1)}
   %a.nav-link{:href => "#{static_pages_reference_price_path}"}
     %i.fas.fa-fw.fa-chart-area
     %span Precios de referencia
 %hr.sidebar-divider.d-none.d-md-block/
-%li.nav-item
+%li.nav-item{class: ("active" if @index==2)}
   %a.nav-link{:href =>"#{static_pages_sanctioned_path}"}
     %i.fas.fa-fw.fa-chart-area
     %span Particulares sancionado
