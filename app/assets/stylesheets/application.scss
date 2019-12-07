@@ -1,0 +1,14 @@
+@import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import 'base/variables';
+@import 'base/color';
+@import 'base/flashes';
+@import 'objects/navbar';
+@import 'views/login';
+@import 'sb-admin-2';
+
+.img-dashboard{
+  width: 100%;
+  height: 300px;
+}
