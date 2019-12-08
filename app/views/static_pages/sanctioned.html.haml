@@ -64,31 +64,21 @@
                 .chart-area
                   =image_tag "top_monto_sancion.png", class: "img-dashboard-2"
 
-        / Content Row
-        .row
-          / Area Chart
-          .col-xl-12.col-lg-12
-            .card.shadow.mb-4
-              / Card Header - Dropdown
-              .card-header.py-3.d-flex.flex-row.align-items-center.justify-content-between
-                %h6.m-0.font-weight-bold.text-primary CONAGUA
-              / Card Body
-              .card-body.long
-                .chart-area
-                  %iframe{:src => "#{@root_url}/conagua/index.html", width: "100%", height: "600px"}
 
-        / Content Row
+        /Content Row
         .row
           / Area Chart
           .col-xl-12.col-lg-12
             .card.shadow.mb-4
               / Card Header - Dropdown
               .card-header.py-3.d-flex.flex-row.align-items-center.justify-content-between
-                %h6.m-0.font-weight-bold.text-primary CFE
+                %h6.m-0.font-weight-bold.text-primary TOP Porcentajes
               / Card Body
               .card-body.long
                 .chart-area
-                  %iframe{:src => "#{@root_url}/cfe/index.html", width: "100%", height: "600px"}
+                  =image_tag "top_porcentajes.png", class: "img-dashboard-2"
+
+
 
     / End of Main Content
     / Footer

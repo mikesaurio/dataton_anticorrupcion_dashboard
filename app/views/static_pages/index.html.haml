@@ -32,7 +32,7 @@
                 .chart-area
                   %iframe{:src => "#{@root_url}/utuw.html", width: "100%", height: "600px"}
 
-        / Content Row
+        /Content Row
         .row
           / Area Chart
           .col-xl-6.col-lg-7
@@ -55,6 +55,33 @@
               .card-body
                 .chart-area
                   =image_tag "heatmap_2.png", class: "img-dashboard"
+
+
+        /Content Row
+        .row
+          / Area Chart
+          .col-xl-12.col-lg-12
+            .card.shadow.mb-4
+              / Card Header - Dropdown
+              .card-header.py-3.d-flex.flex-row.align-items-center.justify-content-between
+                %h6.m-0.font-weight-bold.text-primary CONAGUA
+              / Card Body
+              .card-body.long
+                .chart-area
+                  %iframe{:src => "#{@root_url}/conagua/index.html", width: "100%", height: "600px"}
+
+        /Content Row
+        .row
+          / Area Chart
+          .col-xl-12.col-lg-12
+            .card.shadow.mb-4
+              / Card Header - Dropdown
+              .card-header.py-3.d-flex.flex-row.align-items-center.justify-content-between
+                %h6.m-0.font-weight-bold.text-primary CFE
+              / Card Body
+              .card-body.long
+                .chart-area
+                  %iframe{:src => "#{@root_url}/cfe/index.html", width: "100%", height: "600px"}
 
 
 
